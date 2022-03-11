@@ -10,8 +10,9 @@ $header = "Enviado desde la pagina de contacto";
 $mensajeCompleto = $mensaje . "\n Atentamente ". $nombre ;
 
 mail($destinatario, $asunto, $mensajeCompleto, $header);
-echo "<script>alert('Enviado exitosamente')</script>";
+header("Location:contact.html");
+/*echo "<script>alert('Enviado exitosamente')</script>";
 echo "<script> setTimeout(\"Location:index.html\", 1000) </script>";
-
+*/
 
 ?>
